@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>גן בטוח</title>
+<meta name="description" content="תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין לשמונה שעות.">
+<style>
+:root{--bg:#F3F4F9;--card:#fff;--fg:#161927;--muted:#5E6583;--accent:#4B5BDC;--hero:#1C2140;--line:#DDE1EE}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10121B;--card:#181B27;--fg:#E9EBF4;--muted:#98A0BC;--accent:#8C9BFF;--hero:#171A2E;--line:#2C3146}}
+:root[data-theme="dark"]{--bg:#10121B;--card:#181B27;--fg:#E9EBF4;--muted:#98A0BC;--accent:#8C9BFF;--hero:#171A2E;--line:#2C3146}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.6}
+header{background:linear-gradient(160deg,var(--hero),#2A3163);color:#F2F3FA;padding:40px 20px}
+.w{max-width:720px;margin:0 auto}
+h1{margin:0;font-size:2rem}
+header p{margin:8px 0 0;color:#B4B9DA;font-size:1.05rem}
+main{max-width:720px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+h2{margin:6px 0 4px;font-size:1.2rem}
+ul{margin:0;padding-inline-start:20px}
+li{margin:4px 0}
+.cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:12px;font-size:1.05rem}
+.muted{color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<header><div class="w"><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין לשמונה שעות.</p></div></header>
+<main>
+  <section class="card">
+    <h2>מה התוכנה עושה</h2>
+    <ul>
+      <li>מחברים את המקליט למחשב, וההקלטות מועתקות ומנותחות אוטומטית.</li>
+      <li>מסמנת צעקות, מכות, צווחות, בכי ממושך ומילים חשודות, עם שעה מדויקת לכל אירוע.</li>
+      <li>יש תמלול, וחיפוש במילים שנאמרו שמקפיץ ישר לדקה הזו בהקלטה.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>פרטיות</h2>
+    <ul>
+      <li>ההקלטות נשארות במחשב שלך. התוכנה לא שולחת הקלטות או נתונים אישיים לשום שרת.</li>
+      <li>הזיהוי האוטומטי יכול לטעות, ולכן כל אירוע צריך האזנה לפני מסקנות.</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>איך מתחילים</h2>
+    <p>ממלאים את הטופס הקצר ומאשרים את תנאי השימוש. בסוף הטופס יופיע קישור להורדה.</p>
+    <p><a class="cta" id="formLink" href="#">למילוי הטופס והורדה</a></p>
+    <p class="muted">מי שכבר התקין את התוכנה יקבל עדכונים מתוכה, בלי להוריד שוב.</p>
+  </section>
+</main>
+<script>
+// להחליף לכתובת הטופס מ-Google Forms
+const FORM_URL = 'https://docs.google.com/forms/';
+document.getElementById('formLink').href = FORM_URL;
+</script>
+</body>
+</html>
