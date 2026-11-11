@@ -10,8 +10,10 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10121B;--card:#181B27;--fg:#E9EBF4;--muted:#98A0BC;--accent:#8C9BFF;--hero:#171A2E;--line:#2C3146}}
 :root[data-theme="dark"]{--bg:#10121B;--card:#181B27;--fg:#E9EBF4;--muted:#98A0BC;--accent:#8C9BFF;--hero:#171A2E;--line:#2C3146}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.6}
-header{background:linear-gradient(160deg,var(--hero),#2A3163);color:#F2F3FA;padding:40px 20px}
+header{background:linear-gradient(160deg,var(--hero),#2A3163);color:#F2F3FA;padding:40px 20px;text-align:center}
+.logo{width:96px;height:96px;display:block;margin:0 auto 12px}
 .w{max-width:720px;margin:0 auto}
+header .w{display:flex;flex-direction:column;align-items:center}
 h1{margin:0;font-size:2rem}
 header p{margin:8px 0 0;color:#B4B9DA;font-size:1.05rem}
 main{max-width:720px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:14px}
@@ -24,7 +26,7 @@ li{margin:4px 0}
 </style>
 </head>
 <body>
-<header><div class="w"><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
+<header><div class="w"><img class="logo" src="logo.png" alt="לוגו גן בטוח"><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
 <main>
   <section class="card">
     <h2>מה התוכנה עושה</h2>
