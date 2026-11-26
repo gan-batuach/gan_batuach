@@ -12,6 +12,10 @@
 body{margin:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.6}
 header{background:linear-gradient(160deg,var(--hero),#2A3163);color:#F2F3FA;padding:40px 20px;text-align:center}
 .logo{width:96px;height:96px;display:block;margin:0 auto 12px}
+.logo{overflow:visible}
+.logo-run{stroke-dasharray:140 1000;animation:logoRun 2.6s linear infinite}
+@keyframes logoRun{from{stroke-dashoffset:140}to{stroke-dashoffset:-1000}}
+@media (prefers-reduced-motion:reduce){.logo-run{animation:none;opacity:0}}
 .w{max-width:720px;margin:0 auto}
 header .w{display:flex;flex-direction:column;align-items:center}
 h1{margin:0;font-size:2rem}
@@ -26,7 +30,7 @@ li{margin:4px 0}
 </style>
 </head>
 <body>
-<header><div class="w"><img class="logo" src="logo.png" alt="לוגו גן בטוח"><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
+<header><div class="w"><svg class="logo" viewBox="0 0 256 256" overflow="visible" role="img" aria-label="לוגו גן בטוח"><rect width="256" height="256" rx="56" fill="#1C2140"/><g transform="translate(19 16.6) scale(7.8)"><path d="M14 3 5 6.5v6.8c0 5.4 3.7 9.6 9 11.7 5.3-2.1 9-6.3 9-11.7V6.5L14 3Z" stroke="#F2F3FA" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M8.6 13.2c1.6-2.3 3.3-3.4 5.4-3.4s3.8 1.1 5.4 3.4c-1.6 2.3-3.3 3.4-5.4 3.4s-3.8-1.1-5.4-3.4Z" stroke="#9FB0FF" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="14" cy="13.2" r="1.7" fill="#9FB0FF"/></g><path id="logoPulse" d="M-160 128 L-40 128 L-24 110 L-8 146 L8 96 L24 128 L416 128" fill="none" stroke="#FFFFFF" stroke-opacity=".28" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path class="logo-run" d="M-160 128 L-40 128 L-24 110 L-8 146 L8 96 L24 128 L416 128" pathLength="1000" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></svg><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
 <main>
   <section class="card">
     <h2>מה התוכנה עושה</h2>
