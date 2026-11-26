@@ -15,14 +15,11 @@ header .w{position:relative;z-index:1}
 .hb{position:absolute;left:0;top:88px;width:100%;height:40px;transform:translateY(-50%);pointer-events:none;z-index:0;overflow:visible}
 .hb path{fill:none;stroke-linejoin:round;stroke-linecap:round}
 .hb .base{stroke:#F2F3FA;stroke-opacity:.22;stroke-width:1.5}
-.hb .run{stroke:#FFFFFF;stroke-width:2.2;stroke-dasharray:90 1000;animation:hbRun 3.2s linear infinite}
-@keyframes hbRun{from{stroke-dashoffset:0}to{stroke-dashoffset:-1090}}
+.hb .run{stroke:#FFFFFF;stroke-width:2.2;stroke-dasharray:90 2000;animation:hbRun 3.2s linear infinite}
+@keyframes hbRun{from{stroke-dashoffset:90}to{stroke-dashoffset:-1000}}
 @media (prefers-reduced-motion:reduce){.hb .run{animation:none;opacity:0}}
 .logo{width:96px;height:96px;display:block;margin:0 auto 12px}
 .logo{overflow:visible}
-.logo-run{stroke-dasharray:140 1000;animation:logoRun 2.6s linear infinite}
-@keyframes logoRun{from{stroke-dashoffset:140}to{stroke-dashoffset:-1000}}
-@media (prefers-reduced-motion:reduce){.logo-run{animation:none;opacity:0}}
 .w{max-width:720px;margin:0 auto}
 header .w{display:flex;flex-direction:column;align-items:center}
 h1{margin:0;font-size:2rem}
@@ -37,7 +34,7 @@ li{margin:4px 0}
 </style>
 </head>
 <body>
-<header><svg class="hb" viewBox="0 0 800 40" preserveAspectRatio="none" aria-hidden="true"><path class="base" d="M-40 20 L20 20 L32 4 L44 36 L56 -8 L68 20 L280 20 L292 4 L304 36 L316 -8 L328 20 L540 20 L552 4 L564 36 L576 -8 L588 20 L800 20 L812 4 L824 36 L836 -8 L848 20 L1060 20 L1072 4 L1084 36 L1096 -8 L1108 20 L1320 20 L1332 4 L1344 36 L1356 -8 L1368 20 L1580 20 L1592 4 L1604 36 L1616 -8 L1628 20 L1640 20"/><path class="run" pathLength="1000" d="M-40 20 L20 20 L32 4 L44 36 L56 -8 L68 20 L280 20 L292 4 L304 36 L316 -8 L328 20 L540 20 L552 4 L564 36 L576 -8 L588 20 L800 20 L812 4 L824 36 L836 -8 L848 20 L1060 20 L1072 4 L1084 36 L1096 -8 L1108 20 L1320 20 L1332 4 L1344 36 L1356 -8 L1368 20 L1580 20 L1592 4 L1604 36 L1616 -8 L1628 20 L1640 20"/></svg><div class="w"><svg class="logo" viewBox="0 0 256 256" overflow="visible" role="img" aria-label="לוגו גן בטוח"><rect width="256" height="256" rx="56" fill="#1C2140"/><g transform="translate(19 16.6) scale(7.8)"><path d="M14 3 5 6.5v6.8c0 5.4 3.7 9.6 9 11.7 5.3-2.1 9-6.3 9-11.7V6.5L14 3Z" stroke="#F2F3FA" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M8.6 13.2c1.6-2.3 3.3-3.4 5.4-3.4s3.8 1.1 5.4 3.4c-1.6 2.3-3.3 3.4-5.4 3.4s-3.8-1.1-5.4-3.4Z" stroke="#9FB0FF" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="14" cy="13.2" r="1.7" fill="#9FB0FF"/></g><path id="logoPulse" d="M-160 128 L-40 128 L-24 110 L-8 146 L8 96 L24 128 L416 128" fill="none" stroke="#FFFFFF" stroke-opacity=".28" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path class="logo-run" d="M-160 128 L-40 128 L-24 110 L-8 146 L8 96 L24 128 L416 128" pathLength="1000" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></svg><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
+<header><svg class="hb" viewBox="0 0 800 40" preserveAspectRatio="none" aria-hidden="true"><path class="base" d="M-40 20 L20 20 L32 4 L44 36 L56 -8 L68 20 L280 20 L292 4 L304 36 L316 -8 L328 20 L540 20 L552 4 L564 36 L576 -8 L588 20 L800 20 L812 4 L824 36 L836 -8 L848 20 L1060 20 L1072 4 L1084 36 L1096 -8 L1108 20 L1320 20 L1332 4 L1344 36 L1356 -8 L1368 20 L1580 20 L1592 4 L1604 36 L1616 -8 L1628 20 L1640 20"/><path class="run" pathLength="1000" d="M-40 20 L20 20 L32 4 L44 36 L56 -8 L68 20 L280 20 L292 4 L304 36 L316 -8 L328 20 L540 20 L552 4 L564 36 L576 -8 L588 20 L800 20 L812 4 L824 36 L836 -8 L848 20 L1060 20 L1072 4 L1084 36 L1096 -8 L1108 20 L1320 20 L1332 4 L1344 36 L1356 -8 L1368 20 L1580 20 L1592 4 L1604 36 L1616 -8 L1628 20 L1640 20"/></svg><div class="w"><svg class="logo" viewBox="0 0 256 256" overflow="visible" role="img" aria-label="לוגו גן בטוח"><rect width="256" height="256" rx="56" fill="#1C2140"/><g transform="translate(19 16.6) scale(7.8)"><path d="M14 3 5 6.5v6.8c0 5.4 3.7 9.6 9 11.7 5.3-2.1 9-6.3 9-11.7V6.5L14 3Z" stroke="#F2F3FA" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M8.6 13.2c1.6-2.3 3.3-3.4 5.4-3.4s3.8 1.1 5.4 3.4c-1.6 2.3-3.3 3.4-5.4 3.4s-3.8-1.1-5.4-3.4Z" stroke="#9FB0FF" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="14" cy="13.2" r="1.7" fill="#9FB0FF"/></g></svg><h1>גן בטוח</h1><p>תוכנה חינמית שמנתחת את הקלטות המקליט מהגן, כך שלא צריך להאזין שעות ארוכות.</p></div></header>
 <main>
   <section class="card">
     <h2>מה התוכנה עושה</h2>
